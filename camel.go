@@ -68,7 +68,9 @@ func toCamelInitCase(s string, initCase bool) string {
 			capNext = false
 		} else if vIsNum := v >= '0' && v <= '9'; vIsNum {
 			n.WriteByte(v)
-			capNext = true
+			if !hasAcronym {
+				capNext = true
+			}
 		} else {
 			capNext = v == '_' || v == ' ' || v == '-' || v == '.'
 		}
