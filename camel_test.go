@@ -39,9 +39,11 @@ func toCamel(tb testing.TB) {
 		{"many_many_words", "ManyManyWords"},
 		{"AnyKind of_string", "AnyKindOfString"},
 		{"odd-fix", "OddFix"},
-		{"numbers2And55with000", "Numbers2And55With000"},
+		{"numbers2And55with000", "Numbers2And55with000"},
 		{"ID", "Id"},
 		{"CONSTANT_CASE", "ConstantCase"},
+		{"90s-kids", "90sKids"},
+		{"k8s_version", "K8sVersion"},
 	}
 	for _, i := range cases {
 		in := i[0]
@@ -72,6 +74,8 @@ func toLowerCamel(tb testing.TB) {
 		{"some string", "someString"},
 		{" some string", "someString"},
 		{"CONSTANT_CASE", "constantCase"},
+		{"90s-kids", "90sKids"},
+		{"k8s_version", "k8sVersion"},
 	}
 	for _, i := range cases {
 		in := i[0]
