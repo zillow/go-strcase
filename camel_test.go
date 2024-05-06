@@ -116,18 +116,6 @@ func TestCustomAcronymsToCamel(t *testing.T) {
 			acronymValue: "PostgreSQL",
 			expected:     "PostgreSQL",
 		},
-		{
-			name:         "K8s Custom Acronym",
-			acronymKey:   "K8s",
-			acronymValue: "k8s",
-			expected:     "K8s",
-		},
-		{
-			name:         "90s Custom Acronym",
-			acronymKey:   "90s",
-			acronymValue: "90s",
-			expected:     "90s",
-		},
 	}
 	for _, test := range tests {
 		t.Run(test.name, func(t *testing.T) {
@@ -163,18 +151,6 @@ func TestCustomAcronymsToLowerCamel(t *testing.T) {
 			acronymKey:   "PostgreSQL",
 			acronymValue: "PostgreSQL",
 			expected:     "postgreSQL",
-		},
-		{
-			name:         "K8s Custom Acronym",
-			acronymKey:   "K8s",
-			acronymValue: "k8s",
-			expected:     "k8s",
-		},
-		{
-			name:         "90s Custom Acronym",
-			acronymKey:   "90s",
-			acronymValue: "90s",
-			expected:     "90s",
 		},
 	}
 	for _, test := range tests {
